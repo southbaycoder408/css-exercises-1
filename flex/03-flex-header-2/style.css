@@ -2,17 +2,38 @@
 you'll learn about it later. */
 @import url('https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,400;1,900&display=swap');
 
+/* *{
+  border: 1px solid red;
+}  */
+
 body {
   margin: 0;
   background: #eee;
   font-family: Besley, serif;
 }
 
-.header {
-  background: white;
-  border-bottom: 1px solid #ddd;
+.header-parent{
+  display: flex;
+  justify-content: space-between;
   box-shadow: 0 0 8px rgba(0,0,0,.1);
+  border-bottom: 1px solid #ddd;
+  background-color: white;
+  padding: 8px;
+  margin: 0; 
 }
+
+.header-left{
+  background: white;
+  display: flex;
+  align-items: center; 
+}
+
+.header-right {
+  background: white;
+  display: flex; 
+  align-items: center; 
+}
+
 
 .profile-image {
   background: rebeccapurple;
@@ -27,6 +48,13 @@ body {
   font-size: 32px;
   font-weight: 900;
   font-style: italic;
+  padding-left: 0px;
+  padding-right: 16px;
+}
+
+.links{
+  display: inline-flex;
+  padding: 0px;
 }
 
 button {
@@ -35,14 +63,18 @@ button {
   background: rebeccapurple;
   color: white;
   padding: 8px 24px;
+  margin-right: 16px;
 }
 
 a {
   /* this removes the line under our links */
   text-decoration: none;
   color: rebeccapurple;
+  display: flex;
+  padding-right: 16px;
 }
 
 ul {
   list-style-type: none;
+  margin: 0;
 }
